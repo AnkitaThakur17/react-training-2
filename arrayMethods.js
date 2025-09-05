@@ -84,3 +84,9 @@ console.log(allEven); // true
 let numss = [1, 3, 5, 8];
 let hasEven = numss.some(num => num % 2 === 0);
 console.log(hasEven); // true
+
+//filter
+let fil =[1,3,5,7,9]
+let res= fil.filter((r)=>r%2===0)
+console.log(res)// o/p  empty array
+
