@@ -55,7 +55,7 @@ for(let i = 0; i<str5.length; i++){
 let obj3 = {id:1, name:"ankita"}
 let keys = Object.keys(obj3)
 for(i=0; i<keys.length; i++){
-    console.log(keys[i]) // o/p id name
+    console.log(keys[i]) // o/p id name (may work like this)
 }
 
 //for of loop
@@ -122,3 +122,62 @@ console.log(clonee.salary) // 5000
 clonee.place = "Gwalior" // {place: 'Gwalior'}
 clonee.greet() // good afternoon
 console.log(clonee) // gives a new object empty one , but above object's properties are still accessible.
+
+//while loop
+let z = 0;
+while (z < 5) {
+    console.log(z);
+    z++;
+}
+// Check z < 5
+// Agar true → code block chalega
+// Fir z++ hogi
+// Phir dobara condition check hogi
+// Jab z == 5, condition false → loop ruk jayega
+
+// Jab tak condition true hai, loop us block ko baar-baar chalata rahega.
+// Condition check pehle hoti hai, phir block chalta hai.
+
+//do while
+// Condition check karne se pehle block ka code at least 1 baar chalta hai, chahe condition false hi kyu na ho.
+let y = 10;
+do {
+  console.log(y);
+  y++;
+} while (y < 5); // 10 //Kyuki do { ... } wala block pehle execute hota hai, phir condition check hoti hai.
+
+//2nd example
+let g= 20;
+do{
+    console.log(g)
+    g++
+}while(g<25)  // 20 21 22 23 24
+
+// switch case
+let day = 5; //Jab fixed options ho (numbers, strings) we can use switch. Multiple cases stacked → Easy in switch-case.
+
+switch (day) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wednesday');
+        break;
+    case 4:
+        console.log('Thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+    case 6:
+        console.log('Saturday');
+        break;
+    case 7:
+        console.log('Sunday');
+        break;
+    default:
+        console.log('Invalid day number'); // Friday
+}
